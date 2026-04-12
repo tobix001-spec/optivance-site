@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Sample coffee brand homepage mockup">
+  <defs>
+    <linearGradient id="nl1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#292524"/><stop offset="100%" style="stop-color:#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#nl1)"/>
+  <text x="60" y="70" fill="#fafaf9" font-family="system-ui,sans-serif" font-size="14" letter-spacing="0.35em">NORTHLINE</text>
+  <text x="60" y="200" fill="#fef3c7" font-family="Georgia,serif" font-size="48" font-weight="600">Small-batch roasts</text>
+  <text x="60" y="270" fill="#a8a29e" font-family="system-ui,sans-serif" font-size="18">Subscribe · Ship nationwide</text>
+  <rect x="60" y="320" width="180" height="52" rx="4" fill="#d97706"/>
+  <text x="95" y="355" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="600">Shop beans</text>
+  <rect x="580" y="100" width="560" height="550" rx="16" fill="#44403c" opacity="0.6"/>
+  <text x="720" y="380" fill="#78716c" font-family="system-ui,sans-serif" font-size="14">Product hero</text>
+</svg>

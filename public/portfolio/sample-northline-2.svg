@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Sample product grid mockup">
+  <rect width="1200" height="750" fill="#fafaf9"/>
+  <rect x="0" y="0" width="1200" height="64" fill="#292524"/>
+  <text x="48" y="42" fill="#fef3c7" font-family="system-ui,sans-serif" font-size="16" letter-spacing="0.2em">NORTHLINE COFFEE</text>
+  <text x="80" y="130" fill="#1c1917" font-family="Georgia,serif" font-size="28">This months picks</text>
+  <g transform="translate(80,180)">
+    <rect width="320" height="380" rx="8" fill="#e7e5e4" stroke="#d6d3d1"/>
+    <rect x="360" width="320" height="380" rx="8" fill="#e7e5e4" stroke="#d6d3d1"/>
+    <rect x="720" width="320" height="380" rx="8" fill="#e7e5e4" stroke="#d6d3d1"/>
+    <text x="100" y="200" fill="#78716c" font-family="system-ui,sans-serif" font-size="13">Bag 01</text>
+    <text x="460" y="200" fill="#78716c" font-family="system-ui,sans-serif" font-size="13">Bag 02</text>
+    <text x="820" y="200" fill="#78716c" font-family="system-ui,sans-serif" font-size="13">Bag 03</text>
+  </g>
+</svg>

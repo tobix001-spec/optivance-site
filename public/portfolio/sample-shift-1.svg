@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Sample SaaS landing mockup">
+  <rect width="1200" height="750" fill="#030712"/>
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a" stroke="#1e293b"/>
+  <text x="48" y="40" fill="#38bdf8" font-family="system-ui,sans-serif" font-size="17" font-weight="700">shift</text>
+  <text x="700" y="40" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="13">Product · Pricing · Docs</text>
+  <text x="80" y="220" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="44" font-weight="700">Ship work, not spreadsheets</text>
+  <text x="80" y="290" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="19">Tasks, clients, and invoices in one calm dashboard.</text>
+  <rect x="80" y="340" width="140" height="48" rx="8" fill="#0ea5e9"/>
+  <text x="108" y="372" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Start free</text>
+  <rect x="520" y="120" width="600" height="520" rx="12" fill="#0f172a" stroke="#334155"/>
+  <rect x="560" y="180" width="520" height="36" rx="4" fill="#1e293b"/>
+  <rect x="560" y="240" width="240" height="120" rx="6" fill="#1e293b"/>
+  <rect x="820" y="240" width="260" height="120" rx="6" fill="#1e293b"/>
+  <rect x="560" y="380" width="520" height="200" rx="6" fill="#1e293b"/>
+</svg>

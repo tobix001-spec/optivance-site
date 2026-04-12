@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Sample dental practice website mockup">
+  <defs>
+    <linearGradient id="hb1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdfa"/><stop offset="100%" style="stop-color:#ccfbf1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#hb1)"/>
+  <rect x="0" y="0" width="1200" height="56" fill="#ffffff" opacity="0.95"/>
+  <text x="48" y="36" fill="#0f766e" font-family="Georgia,serif" font-size="22" font-weight="600">Harbor Dental</text>
+  <text x="900" y="36" fill="#64748b" font-family="system-ui,sans-serif" font-size="13">Care · Team · Book</text>
+  <text x="80" y="220" fill="#134e4a" font-family="Georgia,serif" font-size="42" font-weight="600">Smile with confidence</text>
+  <text x="80" y="280" fill="#475569" font-family="system-ui,sans-serif" font-size="18">Family dentistry · Same-week appointments</text>
+  <rect x="80" y="320" width="160" height="48" rx="6" fill="#0d9488"/>
+  <text x="120" y="352" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="600">Book online</text>
+  <rect x="620" y="140" width="500" height="420" rx="12" fill="#e2e8f0" opacity="0.9"/>
+  <text x="640" y="400" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="14">Clinic photography placeholder</text>
+</svg>
