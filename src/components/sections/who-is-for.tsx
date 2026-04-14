@@ -34,14 +34,6 @@ export function WhoIsFor() {
             </ul>
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-[#121820]/80 p-8 lg:self-start">
-            <p className="text-xs font-medium uppercase tracking-widest text-zinc-500">
-              Not a good fit if:
-            </p>
-            <ul className="mt-4 space-y-3">
-
-            </ul>
-          </div>
         </div>
       </div>
     </section>
