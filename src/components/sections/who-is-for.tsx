@@ -1,0 +1,60 @@
+import { Check } from "lucide-react"
+
+const CRITERIA = [
+  "200–2,000 SKUs",
+  "Offering custom or bespoke pieces",
+  "Carrying consignment / memo inventory",
+  "Running both physical retail and online store",
+  "Currently using 3+ Shopify apps as workarounds",
+  "£500k–£5M annual revenue",
+  "Frustrated with platform limitations",
+]
+
+const NOT_A_FIT = [
+  "You only need a template Shopify theme",
+  "You're pre-revenue or just starting out",
+  "You need a full-service marketing or SEO agency",
+  "You need the site built in under 2 weeks",
+]
+
+export function WhoIsFor() {
+  return (
+    <section id="for" className="border-b border-white/10 py-16 sm:py-20">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div>
+            <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
+              Built for independent jewelry brands that are growing
+            </h2>
+            <p className="mt-4 text-zinc-400">
+              My work is a good fit if your business matches most of these:
+            </p>
+            <ul className="mt-8 space-y-3">
+              {CRITERIA.map((item) => (
+                <li key={item} className="flex items-center gap-3">
+                  <div className="flex size-5 shrink-0 items-center justify-center rounded-full bg-sky-500/20">
+                    <Check className="size-3 text-sky-400" />
+                  </div>
+                  <span className="text-zinc-300">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-xl border border-white/10 bg-[#121820]/80 p-8 lg:self-start">
+            <p className="text-xs font-medium uppercase tracking-widest text-zinc-500">
+              Not a good fit if:
+            </p>
+            <ul className="mt-4 space-y-3">
+              {NOT_A_FIT.map((item) => (
+                <li key={item} className="text-sm text-zinc-400">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

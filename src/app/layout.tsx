@@ -4,19 +4,22 @@ import Script from "next/script"
 import "./globals.css"
 import { SITE } from "@/lib/site-config"
 
-const organizationJsonLd = {
+const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "LocalBusiness",
   name: SITE.name,
   description: SITE.description,
   url: SITE.url,
   email: SITE.email,
-  areaServed: "Worldwide",
-  serviceType: [
-    "Web Design & Development",
-    "Chatbot Development",
-    "Business Process Automation",
-    "E-commerce Development",
+  areaServed: "GB",
+  serviceType: "Custom e-commerce development for UK jewelry brands",
+  knowsAbout: [
+    "Jewelry e-commerce development",
+    "Custom inventory management systems",
+    "GIA certificate integration",
+    "Consignment inventory tracking",
+    "Ring configurator development",
+    "Shopify alternative platforms",
   ],
 }
 
@@ -40,31 +43,34 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} · ${SITE.tagline}`,
+    default: `${SITE.name} · Custom Jewelry E-commerce Developer`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [
-    "web design",
-    "custom website",
-    "chatbot development",
-    "small business website",
-    "e-commerce development",
-    "jewelry website",
-    "business automation",
+    "jewelry e-commerce developer UK",
+    "custom jewelry website",
+    "jewelry inventory management system",
+    "Shopify alternative jewelry",
+    "GIA certificate integration",
+    "consignment inventory jewelry",
+    "ring configurator developer",
+    "bespoke jewelry platform",
+    "one-of-a-kind jewelry tracking",
+    "UK jewelry brand website",
   ],
   authors: [{ name: SITE.name }],
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
     url: SITE.url,
     siteName: SITE.name,
-    title: `${SITE.name} · ${SITE.tagline}`,
+    title: `${SITE.name} · Custom Jewelry E-commerce Developer`,
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} · ${SITE.tagline}`,
+    title: `${SITE.name} · Custom Jewelry E-commerce Developer`,
     description: SITE.description,
   },
   robots: {
@@ -89,7 +95,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-GB"
       className={`dark ${jakarta.variable} ${syne.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#0c1017] text-foreground">
@@ -98,7 +104,7 @@ export default function RootLayout({
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationJsonLd),
+            __html: JSON.stringify(localBusinessJsonLd),
           }}
         />
         {children}

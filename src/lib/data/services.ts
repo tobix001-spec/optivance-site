@@ -1,10 +1,12 @@
 export type ServiceIconKey =
-  | "bot"
-  | "globe"
-  | "store"
-  | "workflow"
-  | "sparkles"
-  | "plug"
+  | "dashboard"
+  | "tag"
+  | "layers"
+  | "sliders"
+  | "shield"
+  | "clipboard"
+  | "refresh"
+  | "monitor"
 
 export type ServiceItem = {
   title: string
@@ -14,39 +16,51 @@ export type ServiceItem = {
 
 export const SERVICES: ServiceItem[] = [
   {
-    title: "Websites & landing pages",
+    title: "Custom admin panels",
     description:
-      "We design and build clear, fast sites and promo pages—mobile-friendly and easy for you to update.",
-    icon: "globe",
+      "Backend dashboards built specifically for jewelry inventory — not adapted from generic e-commerce templates.",
+    icon: "dashboard",
   },
   {
-    title: "Chatbots",
+    title: "One-of-a-kind inventory tracking",
     description:
-      "Chat helpers on your site that answer common questions, point people to the right page, and collect leads.",
-    icon: "bot",
+      "Full status workflows for individual pieces: available, reserved, consigned, sold, repaired.",
+    icon: "tag",
   },
   {
-    title: "Online stores & catalogs",
+    title: "Consignment inventory separation",
     description:
-      "Product listings, collections, and checkout-style flows—for retail, makers, and any brand selling online.",
-    icon: "store",
+      "Clear accounting separation between owned stock and memo / consignment items for tax compliance.",
+    icon: "layers",
   },
   {
-    title: "Automation",
+    title: "Product configurators",
     description:
-      "Connect forms, email, spreadsheets, and CRMs so repeat tasks run in the background.",
-    icon: "workflow",
+      "Ring builders and custom jewelry tools — unlimited variants, no Shopify 3-option workarounds.",
+    icon: "sliders",
   },
   {
-    title: "Content & polish",
+    title: "GIA / IGI certificate integration",
     description:
-      "Sharper copy, clearer sections, and small UX tweaks so visitors know what to do next.",
-    icon: "sparkles",
+      "Certificates attached directly to each SKU for full traceability on high-value pieces.",
+    icon: "shield",
   },
   {
-    title: "Integrations & support",
+    title: "Custom order & repair tracking",
     description:
-      "Hook up payments, booking, analytics, and other tools—and help when you need fixes or changes.",
-    icon: "plug",
+      "From design brief to production to delivery — the entire workflow inside one system.",
+    icon: "clipboard",
+  },
+  {
+    title: "Multi-location inventory sync",
+    description:
+      "Retail store and online store in sync — no double-selling, no manual reconciliation.",
+    icon: "refresh",
+  },
+  {
+    title: "Luxury-focused storefront",
+    description:
+      "Mobile-first, fast-loading frontend design that positions your brand correctly.",
+    icon: "monitor",
   },
 ]

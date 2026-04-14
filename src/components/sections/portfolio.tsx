@@ -1,6 +1,6 @@
 "use client"
 
-import { Code2, ExternalLink, ZoomIn } from "lucide-react"
+import { ExternalLink, ZoomIn } from "lucide-react"
 import { useState } from "react"
 import {
   Dialog,
@@ -21,25 +21,10 @@ export function Portfolio() {
     <section id="work" className="border-b border-white/10 py-16 sm:py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-          Selected work
+          Built for jewelry brands
         </h2>
         <p className="mt-3 max-w-2xl text-zinc-400">
-          Real GitHub work, a live store, plus a few{" "}
-          <span className="text-zinc-300">marked “Sample”</span> concepts with
-          mock UI frames—swap those images in{" "}
-          <code className="rounded bg-white/10 px-1 text-xs text-zinc-400">
-            public/portfolio/
-          </code>{" "}
-          when you have exports. VelvetCarat is from the{" "}
-          <a
-            href="https://velvetcaratco.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sky-400 underline-offset-2 hover:underline"
-          >
-            live site
-          </a>
-          .
+          Two production platforms built from scratch for UK jewelry businesses.
         </p>
 
         <ul className="mt-10 space-y-10">
@@ -48,22 +33,56 @@ export function Portfolio() {
               key={project.id}
               className="rounded-xl border border-white/10 bg-[#121820]/80 p-6"
             >
-              <div className="flex flex-wrap items-center gap-2">
-                <p className="text-xs font-medium text-amber-200/90">
-                  {project.subtitle}
-                </p>
-                {project.isSample ? (
-                  <span className="rounded-md border border-violet-500/35 bg-violet-500/15 px-2 py-0.5 text-[10px] font-semibold tracking-wide text-violet-200 uppercase">
-                    Sample
-                  </span>
-                ) : null}
-              </div>
-              <h3 className="mt-1 font-heading text-lg text-white">
+              <p className="text-xs font-medium text-amber-200/90">
+                {project.subtitle}
+              </p>
+              <h3 className="mt-1 font-heading text-xl text-white">
                 {project.name}
               </h3>
-              <p className="mt-2 text-sm text-zinc-400">{project.summary}</p>
 
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              <div className="mt-5 grid gap-5 sm:grid-cols-2">
+                <div>
+                  <p className="text-xs font-medium uppercase tracking-widest text-zinc-500">
+                    Challenge
+                  </p>
+                  <p className="mt-2 text-sm text-zinc-400">
+                    {project.challenge}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium uppercase tracking-widest text-zinc-500">
+                    Solution
+                  </p>
+                  <p className="mt-2 text-sm text-zinc-400">
+                    {project.solution}
+                  </p>
+                </div>
+              </div>
+
+              {project.features && project.features.length > 0 && (
+                <ul className="mt-5 space-y-1.5">
+                  {project.features.map((f) => (
+                    <li
+                      key={f}
+                      className="flex items-center gap-2 text-sm text-zinc-300"
+                    >
+                      <span className="size-1.5 shrink-0 rounded-full bg-sky-400" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {project.results && (
+                <div className="mt-5 rounded-lg border border-sky-500/20 bg-sky-500/5 px-4 py-3">
+                  <p className="text-xs font-medium uppercase tracking-widest text-sky-400">
+                    Result
+                  </p>
+                  <p className="mt-1 text-sm text-zinc-300">{project.results}</p>
+                </div>
+              )}
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {project.screenshots.map((shot, idx) => (
                   <button
                     key={`${project.id}-${idx}-${shot.src}`}
@@ -98,29 +117,18 @@ export function Portfolio() {
               </div>
 
               <ul className="mt-5 flex flex-wrap gap-2">
-                {project.highlights.map((h) => (
+                {project.tech.map((t) => (
                   <li
-                    key={h}
+                    key={t}
                     className="rounded-md bg-white/5 px-2.5 py-1 text-xs text-zinc-300"
                   >
-                    {h}
+                    {t}
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2">
-                {project.githubUrl ? (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-sky-400 hover:text-sky-300"
-                  >
-                    <Code2 className="size-4" aria-hidden />
-                    View on GitHub
-                    <ExternalLink className="size-3.5 opacity-70" aria-hidden />
-                  </a>
-                ) : null}
-                {project.liveUrl ? (
+
+              {project.liveUrl ? (
+                <div className="mt-5">
                   <a
                     href={project.liveUrl}
                     target="_blank"
@@ -130,16 +138,8 @@ export function Portfolio() {
                     Live site
                     <ExternalLink className="size-3.5 opacity-70" aria-hidden />
                   </a>
-                ) : null}
-                {!project.githubUrl && !project.liveUrl ? (
-                  <a
-                    href="#contact"
-                    className="text-sm font-medium text-zinc-400 underline-offset-2 hover:text-white hover:underline"
-                  >
-                    Discuss a similar project
-                  </a>
-                ) : null}
-              </div>
+                </div>
+              ) : null}
             </li>
           ))}
         </ul>

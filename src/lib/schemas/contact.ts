@@ -4,10 +4,12 @@ export const auditFormSchema = z
   .object({
     name: z.string().min(2, "Name is required"),
     email: z.string().email("Valid email required"),
-    company: z.string().min(1, "Company name helps us prepare"),
+    company: z.string().min(1, "Brand name helps me prepare"),
     website: z.string().optional(),
-    goals: z.string().min(10, "Share a few words about your goals (10+ chars)"),
-    budget: z.enum(["under-5k", "5k-15k", "15k-50k", "50k-plus", "unsure"]),
+    goals: z
+      .string()
+      .min(10, "Tell me a bit about your business (10+ chars)"),
+    budget: z.enum(["under-5k", "5k-8k", "8k-15k", "15k-plus", "unsure"]),
   })
   .superRefine((data, ctx) => {
     const w = data.website?.trim()

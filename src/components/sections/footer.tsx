@@ -7,13 +7,16 @@ export function Footer() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div>
-            <Link href="#hero" className="font-heading text-lg font-semibold text-white">
+            <Link href="#hero" className="font-heading text-2xl font-bold text-white">
               {SITE.name}
             </Link>
-            <p className="mt-2 max-w-sm text-sm text-zinc-500">{SITE.description}</p>
+            <p className="mt-2 max-w-sm text-sm text-zinc-500">
+              UK-based solo developer specialising in custom jewelry e-commerce
+              platforms.
+            </p>
           </div>
           <div>
-            <p className="text-xs font-medium tracking-wide text-zinc-500 uppercase">
+            <p className="text-xs font-medium uppercase tracking-widest text-zinc-500">
               Links
             </p>
             <ul className="mt-3 flex flex-col gap-2">
@@ -31,9 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-8 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} {SITE.name}
-          </p>
+          <p>© {new Date().getFullYear()} Optivance Ltd</p>
           <div className="flex gap-5">
             <a
               href={SITE.social.linkedin}

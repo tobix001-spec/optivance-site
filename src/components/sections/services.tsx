@@ -1,11 +1,13 @@
 import type { ComponentType } from "react"
 import {
-  Bot,
-  Globe,
-  Plug,
-  ShoppingBag,
-  Sparkles,
-  Workflow,
+  ClipboardList,
+  LayoutDashboard,
+  Layers,
+  Monitor,
+  RefreshCw,
+  ShieldCheck,
+  SlidersHorizontal,
+  Tag,
 } from "lucide-react"
 import {
   Card,
@@ -18,12 +20,14 @@ import type { ServiceIconKey } from "@/lib/data/services"
 import { SERVICES } from "@/lib/data/services"
 
 const ICONS: Record<ServiceIconKey, ComponentType<{ className?: string }>> = {
-  bot: Bot,
-  globe: Globe,
-  store: ShoppingBag,
-  workflow: Workflow,
-  sparkles: Sparkles,
-  plug: Plug,
+  dashboard: LayoutDashboard,
+  tag: Tag,
+  layers: Layers,
+  sliders: SlidersHorizontal,
+  shield: ShieldCheck,
+  clipboard: ClipboardList,
+  refresh: RefreshCw,
+  monitor: Monitor,
 }
 
 export function Services() {
@@ -31,13 +35,13 @@ export function Services() {
     <section id="services" className="border-b border-white/10 py-16 sm:py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-          Services
+          Custom solutions for jewelry-specific complexity
         </h2>
         <p className="mt-3 max-w-xl text-zinc-400">
-          Tell us what you’re after—we often bundle a few of these in one project.
+          Every feature is built around how jewelry businesses actually operate.
         </p>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((s) => {
             const Icon = ICONS[s.icon]
             return (

@@ -1,33 +1,28 @@
 export const SITE = {
   name: "Optivance",
-  tagline: "Websites, chatbots, and automation for growing teams",
+  tagline: "Custom e-commerce platforms for UK jewelry brands — built for how you actually sell",
   description:
-    "We design and build sites, chat helpers, and simple automation for any small business—retail, services, trades, creators, and startups. Clear timelines, fair pricing, no fluff.",
-  url: "https://optivance.example.com",
-  email: "hello@optivance.example.com",
+    "I build custom e-commerce platforms exclusively for UK jewelry brands. Specialist in one-of-a-kind inventory tracking, consignment management, GIA integration, and complex variant handling that breaks Shopify's limits.",
+  url: "https://optivance.co.uk",
+  email: "hello@optivance.co.uk",
+  calendlyUrl: "https://calendly.com/optivance",
   social: {
     linkedin: "https://linkedin.com",
     twitter: "https://x.com",
   },
 } as const
 
-/** Shown in hero and reviews */
+/** Kept for backward-compat with reviews.tsx (not rendered in page) */
 export const SOCIAL_PROOF = {
-  satisfiedCustomers: "50+",
-  satisfiedLabel: "satisfied customers",
-  supportingLine:
-    "Trusted by shop owners, agencies, and founders who wanted a site and systems that just work.",
-  heroStats: [
-    { value: "50+", label: "Happy clients" },
-    { value: "100+", label: "Projects delivered" },
-    { value: "2-week", label: "Typical first milestone" },
-  ],
+  satisfiedCustomers: "2",
+  satisfiedLabel: "production jewelry platforms",
+  supportingLine: "Trusted by independent jewelry brands across the UK.",
+  heroStats: [] as { value: string; label: string }[],
 } as const
 
 export const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#reviews", label: "Reviews" },
   { href: "#work", label: "Work" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ] as const

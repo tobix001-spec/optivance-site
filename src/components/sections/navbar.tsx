@@ -16,7 +16,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link
           href="#hero"
-          className="font-heading text-lg font-semibold text-white"
+          className="font-heading text-2xl font-bold text-white"
         >
           {SITE.name}
         </Link>
