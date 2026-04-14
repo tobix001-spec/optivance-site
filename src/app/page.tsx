@@ -6,7 +6,6 @@ import { HowItWorks } from "@/components/sections/how-it-works"
 import { Navbar } from "@/components/sections/navbar"
 import { Portfolio } from "@/components/sections/portfolio"
 import { Pricing } from "@/components/sections/pricing"
-import { Problems } from "@/components/sections/problems"
 import { Services } from "@/components/sections/services"
 import { WhoIsFor } from "@/components/sections/who-is-for"
 
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <Problems />
         <Services />
         <WhoIsFor />
         <Pricing />
