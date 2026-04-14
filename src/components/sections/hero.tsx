@@ -17,7 +17,7 @@ const PILLS = [
     tooltip: "Fixed timeline with weekly check-ins and no scope creep",
   },
   {
-    label: "£8k – £15k",
+    label: "£2k – £8k",
     tooltip: "Fixed-price project — no hourly billing surprises",
   },
 ]
@@ -100,20 +100,10 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Trust line */}
-        <p className="mt-5 text-sm text-zinc-500">
-          Built for independent UK jewelry brands doing £500k–£5M revenue
-        </p>
+
 
         {/* Soft link */}
-        <p className="mt-3">
-          <Link
-            href="#problems"
-            className="text-xs text-zinc-600 underline-offset-2 transition-colors hover:text-zinc-400 hover:underline"
-          >
-            Not ready to book? Read why Shopify fails jewelry brands →
-          </Link>
-        </p>
+
 
       </div>
     </section>

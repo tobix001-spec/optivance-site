@@ -13,7 +13,7 @@ const STATS = [
   },
 ]
 
-const LOGOS = ["VelvetCarat Co", "Lumina Jewelry"]
+const LOGOS = ["VelvetCarat Co", "Lumina Jewelry", "Vrundavan Jewellers"]
 
 export function About() {
   return (

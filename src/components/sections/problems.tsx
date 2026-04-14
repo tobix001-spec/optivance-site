@@ -88,12 +88,6 @@ export function Problems() {
           })}
         </div>
 
-        <blockquote className="mt-10 rounded-xl border border-amber-500/20 bg-amber-500/5 px-6 py-6 text-center">
-          <p className="text-sm italic text-amber-100/80">
-            "Using a system made for t-shirts on diamond rings is not just
-            inefficient. It leads directly to financial risk and chaos."
-          </p>
-        </blockquote>
       </div>
     </section>
   )

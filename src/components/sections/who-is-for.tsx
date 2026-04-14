@@ -6,16 +6,9 @@ const CRITERIA = [
   "Carrying consignment / memo inventory",
   "Running both physical retail and online store",
   "Currently using 3+ Shopify apps as workarounds",
-  "£500k–£5M annual revenue",
   "Frustrated with platform limitations",
 ]
 
-const NOT_A_FIT = [
-  "You only need a template Shopify theme",
-  "You're pre-revenue or just starting out",
-  "You need a full-service marketing or SEO agency",
-  "You need the site built in under 2 weeks",
-]
 
 export function WhoIsFor() {
   return (
@@ -46,11 +39,7 @@ export function WhoIsFor() {
               Not a good fit if:
             </p>
             <ul className="mt-4 space-y-3">
-              {NOT_A_FIT.map((item) => (
-                <li key={item} className="text-sm text-zinc-400">
-                  {item}
-                </li>
-              ))}
+
             </ul>
           </div>
         </div>
